@@ -1,0 +1,151 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header Styles */
+  .header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+  }
+  
+  .nav-toggle {
+    background: none;
+    color: #fff;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .nav {
+    background-color: #444;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-links li {
+    margin: 0 10px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+    border-radius: 5px;
+  }
+  
+  .nav-links a:hover {
+    background-color: #555;
+  }
+  
+  /* Main Styles */
+  .main {
+    padding: 20px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .menu-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  
+  .menu-item {
+    background-color: #e0e0e0;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu-item h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .menu-item p {
+    font-size: 16px;
+    text-align: justify;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    position: relative;
+    background-color: #333;
+    height: 50px;
+    overflow: hidden;
+  }
+  
+  .zigzag {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background: repeating-linear-gradient(
+      -45deg,
+      #333 0,
+      #333 15px,
+      #f9f9f9 15px,
+      #f9f9f9 30px
+    );
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .nav-toggle {
+      display: block;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .menu-title {
+      font-size: 24px;
+    }
+  
+    .menu-item h3 {
+      font-size: 18px;
+    }
+  
+    .menu-item p {
+      font-size: 14px;
+    }
+  }
+  
